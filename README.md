@@ -1,7 +1,7 @@
 # bioinformatics KU course
 A repository for the crash-course on microbial (meta)genomics data analysis at the University of Copenhagen, <a href="https://food.ku.dk/english/research_at_food/sections/microbiology/">Food Microbiology, Gut Health, and Fermentation</a>.
 
-<img src="">
+<img src="https://github.com/farhadm1990/bioinformatics_KU/blob/main/pix/logo.png">
 
 
 ## This course will cover two main tools:
