@@ -9,7 +9,7 @@ A repository for the crash-course on microbial (meta)genomics data analysis at t
 
 ## This course will cover two main tools:
 
-# <a href="">1. MicroLoop</a>:
+# <a href="">1. MicroLoop</a>: A shiny R app for Metagenomics analysis
 
 <p style="color: purple">Microbiome data analysis has posed many challenges on the researchers and decision-making entities, due to its complexity and hefty work that comes with it. In addition, due to lack of a golden standard for this type of sparce data analysis reproducibility of the results from lab to lab might be jeopardized. Therefore, MicroLoop was developed as a shiny app in R to perfom a wide variety of task with no need for hard-coding and any demanding bioinformatics skills.
 
@@ -26,12 +26,13 @@ A repository for the crash-course on microbial (meta)genomics data analysis at t
 <li><h5>Phylogenetic-based analysis and tree visualizations</h5></li>
 </ol>
 
+<h5 style="color: red">In all these stages you can download modified dataset, generated tables and high-resolution publication-ready plots!</h5>
 </p>
 
 <h6>This app is hosted on an <a href="https://aws.amazon.com/ec2/"> <strong>ECS</strong></a> inctance on <a href="https://aws.amazon.com/?nc2=h_lg">Amazon Web Service (AWS) </a> </h6>
 
 
-# <a href="https://github.com/farhadm1990/bactflow">2. BactFlow</a>:
+# <a href="https://github.com/farhadm1990/bactflow">2. BactFlow</a>: A python Flask app for single isolate genomics assembly and analysis.
 
 <p>BactFlow is a workflow for bacterial genome assembly of single isolate and metagenomics sequencing reads extracted from Oxford Nanopore Technology (ONT) and Illumina platforms. It is designed using Nextflow DSL 2 technology and reads the generic outputs of Guppy and Dorado basecallers.
 This app is now available as with an interactive user interface (UI) and comes in three single-page apps:
@@ -41,5 +42,12 @@ This app is now available as with an interactive user interface (UI) and comes i
 <li><h5>Assembly:</h5></li>
 <li><h5>Post-assembly:</h5></li>
 </ul>
+
+In the pre-assembly module, we filter out low-read barcodes and generate an inferential statistics on the distribution of reads lenght, quality and number of reads. Via powerful interactive visualization tools you can nail the best length/quality/coverage balance for your next step, assembly. 
+
+In the assembly module, the app offers multiple options for assembling reads including different assemling tools with a real-time output-stream of the nextflow running environment for the error detection and troubleshooting. 
+
+The last but not the least module, post-assembly gives us a statistical analysis on the assembled genomes and shows the success of assembly, not to mention that it offers you tools to fix the start point of the genome, annotate the genome, perform lineage-based completeness analysis and so on...
+
 </p>
 
